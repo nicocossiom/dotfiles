@@ -1,10 +1,14 @@
 #! /bin/bash
 
 ## TODO - add command to readme that downloads the dotfiles repo and launches this program
-## default curl is in /usr/bin/curl 
+## default curl is in /usr/bin/curl
 # Install Homebrew
 echo "Installing Homebrew..."
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+
+echo '# Set PATH, MANPATH, etc., for Homebrew.' >>/Users/pepperonico/.zprofile
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >>/Users/pepperonico/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # install GUI-applications through Homebrew
 echo "Installing GUI-applications through Homebrew..."
@@ -38,8 +42,9 @@ brew install libreoffice-language-pack
 brew install --cask cakebrew
 brew install --cask obsidian
 brew install --cask nextcloud
+brew install mos
 
-echo "Done installing GUI-applications, open and configure each of them manually."
+~/.config/fish/config.fishecho "Done installing GUI-applications, open and configure each of them manually."
 
 # install CLI-apps/tools through Homebrew
 echo "Installing CLI-apps/tools through Homebrew..."
@@ -47,74 +52,77 @@ brew install git
 brew install curl
 brew install wget
 brew install lsd
-echo "alias ls=lsd" >>~/.config/fish/config.fish
 echo "Installing fish shell..."
 brew install fish
+echo "alias ls=lsd" >>~/.config/fish/config.fish
+/opt/homebrew/bin/fish -c "fish_add_path /opt/homebrew/bin"
+/opt/homebrew/bin/fish -c "fisher install IlanCosman/tide@v5"
 echo "Installing fisher"
-curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
+brew install fisher
 echo "Installing fisher plugins..."
-fisher install jorgebucaran/nvm.fish
-fisher install IlanCosman/tide@v5
+/opt/homebrew/bin/fish -c "fisher install jorgebucaran/nvm.fish"
+/opt/homebrew/bin/fish -c "fisher install IlanCosman/tide@v5"
 echo "Launching fish shell to configure fish prompt with tide"
 /opt/homebrew/bin/fish -c "tide configure"
+echo "Adding paths to fish..."
+/opt/homebrew/bin/fish -c "fish_add_path /opt/homebrew/bin"
+/opt/homebrew/bin/fish -c "fisher install reitzig/sdkman-for-fish@v1.4.0"
+/opt/homebrew/bin/fish -c "sdk install java 8.0.345-zulu"
+/opt/homebrew/bin/fish -c "sdk install java 11.0.16.1-zulu"
+/opt/homebrew/bin/fish -c "sdk install java 19-zulu"
+mkdir ~/.ssh
+wget https://gitlab.com/kyb/fish_ssh_agent/raw/master/functions/fish_ssh_agent.fish -P ~/.config/fish/functions/
+echo "fish_ssh_agent" >>~/.config/fish/config.fish
+echo "AddKeysToAgent yes" >~/.ssh/config
 
-echo "Installing JDKs: latest, 11, 8..."
+echo "Installing CMake and other C/C++ tools"
+brew install cmake
+brew install cmake-docs
+brew install ninja
+
+echo "Installing rust"
+brew install rust
+
+echo "Installing JDKs through sdkman: latest, 11, 8..."
 brew install openjdk
 brew install openjdk@11
-brew install openjdk@8
 echo "Installing Maven and jenv..."
 brew install maven
-brew install jenv
-echo "Adding JDKs to jenv..."
-JDK_DIRECTORIES=($(ls -d1 /opt/homebrew/Cellar/openjdk*/*/libexec/openjdk.jdk/Contents/Home/))
-for JDK_DIR in "${JDK_DIRECTORIES[@]}"; do
-    jenv add "$JDK_DIR"
-done
-DONE_SELECTING_JDK=false
-while [ "$DONE_SELECTING_JDK" = false ]; do
-    echo "Select your preferred global JDK, if you do not whish to do so now, press enter."
-    select filename in $(jenv versions); do
-        if [ -z "$filename" ]; then
-            DONE_SELECTING_JDK=true
-            break
-        else
-            echo "you selected $filename"
-            echo "are you sure? (y/n))"
-            read answer
-            if [ "$answer" = "y" ]; then
-                jenv global "$filename"
-                DONE_SELECTING_JDK=true
-                break
-            fi
-            break
-        fi
-    done
-done
+
 echo "Installing python tools, will use Conda to manage python versions"
 brew install --cask anaconda
+/opt/homebrew/bin/fish -c "fish_add_path /opt/homebrew/anaconda3/bin"
 
 echo "Installing JS tools (node, bun, deno)"
 brew install node
-brew install bun
+curl https://bun.sh/install | bash
 brew install deno
 brew install yarn
 
 echo "Installing databases"
 brew install postgresql
-brew install redis
-brew install mongodb-community
 brew install mysql
 brew install sqlite3
 
 # install MacAppStore apps through mas-cli
 echo "Installing MacAppStore apps through mas-cli..."
+echo "Installing mas..."
 brew install mas
-mas install 360593530  # Notabilty
-mas install 1444383602 # GoodNotes 5
-mas install 1388020431 # DevCleaner for Xcode
-mas install 640199958  # Apple Developer
+# Notabilty
+echo "Installing Notabilty..."
+mas install 360593530
+# GoodNotes 5
+echo "Installing GoodNotes 5..."
+mas install 1444383602
+# DevCleaner for Xcode
+echo "Installing DevCleaner for Xcode..."
+mas install 1388020431
+echo "Installing Apple Developer"
+# Apple Developer
+mas install 640199958
 echo "Installing Xcode..."
-mas install 497799835 # Xcode
+# Xcode
+mas install 497799835
 echo "Installing Xcode command line tools..."
 xcode-select --install
 
@@ -122,7 +130,7 @@ xcode-select --install
 echo "Installing fonts..."
 brew tap homebrew/cask-fonts
 brew install --cask font-hack-nerd-font
-brew install --cask font-fira-code
+brew install --cask font-fira-code-nerd-font
 brew install --cask font-iosevka
 echo "The Font Book app will open now, please install the following fonts manually."
 open ./fonts/DankMonoRegular.otf
@@ -132,7 +140,3 @@ open ./fonts/DankMonoItalic.otf
 echo "Making fish shell the default shell..."
 echo "/opt/homebrew/bin/fish" | sudo tee -a /etc/shells
 chsh -s /opt/homebrew/bin/fish
-
-
-
-
