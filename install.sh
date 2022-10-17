@@ -130,7 +130,7 @@ xcode-select --install
 echo "Installing fonts..."
 brew tap homebrew/cask-fonts
 brew install --cask font-hack-nerd-font
-brew install --cask font-fira-code
+brew install --cask font-fira-code-nerd-font
 brew install --cask font-iosevka
 echo "The Font Book app will open now, please install the following fonts manually."
 open ./fonts/DankMonoRegular.otf
