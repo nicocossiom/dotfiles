@@ -127,9 +127,7 @@ brew tap homebrew/cask-fonts
 brew install --cask font-hack-nerd-font
 brew install --cask font-fira-code-nerd-font
 brew install --cask font-iosevka
-echo "The Font Book app will open now, please install the following fonts manually."
-open ./fonts/DankMonoRegular.otf
-open ./fonts/DankMonoItalic.otf
+mv ./fonts/**/*.otf ~/Library/Fonts/
 
 # change default shell to fish
 echo "Making fish shell the default shell..."
