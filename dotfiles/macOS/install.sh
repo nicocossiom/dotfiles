@@ -66,14 +66,12 @@ echo "Launching fish shell to configure fish prompt with tide"
 /opt/homebrew/bin/fish -c "tide configure"
 echo "Adding paths to fish..."
 /opt/homebrew/bin/fish -c "fish_add_path /opt/homebrew/bin"
+echo "Installing SDKMan for sdk management(java), visit https://sdkman.io"
 /opt/homebrew/bin/fish -c "fisher install reitzig/sdkman-for-fish@v1.4.0"
+echo "Installing JDKs through sdkman: latest, 11, 8..."
 /opt/homebrew/bin/fish -c "sdk install java 8.0.345-zulu"
 /opt/homebrew/bin/fish -c "sdk install java 11.0.16.1-zulu"
 /opt/homebrew/bin/fish -c "sdk install java 19-zulu"
-mkdir ~/.ssh
-wget https://gitlab.com/kyb/fish_ssh_agent/raw/master/functions/fish_ssh_agent.fish -P ~/.config/fish/functions/
-echo "fish_ssh_agent" >>~/.config/fish/config.fish
-echo "AddKeysToAgent yes" >~/.ssh/config
 
 echo "Installing CMake and other C/C++ tools"
 brew install cmake
@@ -83,9 +81,6 @@ brew install ninja
 echo "Installing rust"
 brew install rust
 
-echo "Installing JDKs through sdkman: latest, 11, 8..."
-brew install openjdk
-brew install openjdk@11
 echo "Installing Maven and jenv..."
 brew install maven
 
@@ -93,13 +88,13 @@ echo "Installing python tools, will use Conda to manage python versions"
 brew install --cask anaconda
 /opt/homebrew/bin/fish -c "fish_add_path /opt/homebrew/anaconda3/bin"
 
-echo "Installing JS tools (node, bun, deno)"
+echo "Installing JS tools (node, bun, deno, yarn)"
 brew install node
 curl https://bun.sh/install | bash
 brew install deno
 brew install yarn
 
-echo "Installing databases"
+echo "Installing databases (postgresql, mysql, sqlite3)"
 brew install postgresql
 brew install mysql
 brew install sqlite3
@@ -140,3 +135,16 @@ open ./fonts/DankMonoItalic.otf
 echo "Making fish shell the default shell..."
 echo "/opt/homebrew/bin/fish" | sudo tee -a /etc/shells
 chsh -s /opt/homebrew/bin/fish
+
+# create an ssh key
+echo "Setting up ssh keys"
+mkdir ~/.ssh
+cd ~/.ssh || exit
+echo "Downloading and installing fish_ssh_agent"
+wget https://gitlab.com/kyb/fish_ssh_agent/raw/master/functions/fish_ssh_agent.fish -P ~/.config/fish/functions/
+echo "fish_ssh_agent" >>~/.config/fish/config.fish
+touch ~/.ssh/config
+echo "Creating ssh key, input nicocossiom as the file name for the key which is about to be generated"
+ssh-keygen -t ed25519 -C "nicocossiom@gmail.com"
+echo -e "AddKeysToAgent yes\nHost *\nAddKeysToAgent yes\nUseKeychain yes\nIdentityFile ~/.ssh/nicocossiom" >>~/.ssh/config
+ssh-add ~/.ssh/nicocossiom
