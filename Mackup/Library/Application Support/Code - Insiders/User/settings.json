@@ -1,0 +1,408 @@
+{
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": true,
+    "editor.suggestSelection": "first",
+    "git.autofetch": true,
+    "files.autoSave": "afterDelay",
+    "terminal.external.osxExec": "iTerm.app",
+    "editor.fontLigatures": true,
+    "git.ignoreLegacyWarning": true,
+    "[java]": {
+        "editor.defaultFormatter": "redhat.java"
+    },
+    "redhat.telemetry.enabled": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "explorer.confirmDelete": false,
+    "security.workspace.trust.emptyWindow": false,
+    "security.workspace.trust.enabled": false,
+    "terminal.integrated.allowMnemonics": true,
+    "explorer.confirmDragAndDrop": false,
+    "editor.detectIndentation": true,
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "vsicons.dontShowNewVersionMessage": true,
+    "remote.SSH.showLoginTerminal": true,
+    "editor.lineHeight": 20,
+    "editor.smoothScrolling": true,
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.cursorBlinking": "smooth",
+    "editor.unicodeHighlight.invisibleCharacters": true,
+    "[markdown]": {
+        "editor.quickSuggestions": {
+            "other": "on",
+            "comments": "on",
+            "strings": "on"
+        },
+        "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+    },
+    "markdown-pdf.displayHeaderFooter": false,
+    "hediet.vscode-drawio.theme": "min",
+    // Prettier config
+    "prettier.endOfLine": "auto",
+    "prettier.printWidth": 140,
+    "prettier.vueIndentScriptAndStyle": true,
+    "prettier.withNodeModules": true,
+    "prettier.useTabs": true,
+    "prettier.bracketSameLine": true,
+    "autoDocstring.docstringFormat": "numpy",
+    "autoDocstring.includeExtendedSummary": true,
+    "autoDocstring.startOnNewLine": true,
+    "git.confirmSync": false,
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true,
+    "editor.renderWhitespace": "all",
+    "extensions.autoUpdate": "onlyEnabledExtensions",
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-11",
+            "path": "~/.sdkman/candidates/java/11.0.16.1-zulu/zulu-11.jdk/Contents/Home/",
+            "default": false
+        },
+        {
+            "name": "JavaSE-19",
+            "path": "~/.sdkman/candidates/java/19-zulu/zulu-19.jdk/Contents/Home/",
+            "default": true
+        },
+        {
+            "name": "JavaSE-1.8",
+            "path": "~/.sdkman/candidates/java/8.0.345-zulu/zulu-8.jdk/Contents/Home/",
+            "default": true
+        },
+    ],
+    "terminal.integrated.fontFamily": "Liga SFMono Nerd Font, monospace",
+    "remote.SSH.remotePlatform": {
+        "vps-f093bacf.vps.ovh.net": "linux",
+        "151.80.155.90": "linux",
+        "triqui2.fi.upm.es": "linux",
+        "triqui1.fi.upm.es": "linux"
+    },
+    "markdown-preview-enhanced.previewTheme": "atom-dark.css",
+    "java.codeGeneration.generateComments": true,
+    "java.codeGeneration.hashCodeEquals.useInstanceof": true,
+    "java.completion.guessMethodArguments": true,
+    "diffEditor.maxFileSize": 0,
+    "editor.rulers": [
+        120
+    ],
+    "java.debug.settings.showHex": false,
+    "java.debug.settings.showQualifiedNames": true,
+    "editor.columnSelection": false,
+    "C_Cpp.vcFormat.indent.caseContentsWhenBlock": true,
+    "C_Cpp.vcFormat.indent.caseLabels": true,
+    "C_Cpp.vcFormat.newLine.beforeWhileInDoWhile": true,
+    "C_Cpp.clang_format_style": "{ BreakBeforeBraces: Attach, BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 0, NamespaceIndentation: All, AccessModifierOffset: 0æ,}",
+    "terminal.integrated.defaultProfile.linux": "fish",
+    "terminal.integrated.shellIntegration.enabled": true,
+    "C_Cpp.codeAnalysis.clangTidy.enabled": true,
+    "terminal.integrated.fontSize": 12,
+    "editor.fontWeight": "normal",
+    "editor.fontFamily": "iMWritingMonoNerdFont-Italic, Iosevka-Extended-Italic, LigaSFMonoNerdFont-Medium, SpaceMonoNerdFontCompleteM-Regular, DankMono-Regular, DankMono-Italic, JetBrainsMono Nerd Font, Hack Nerd Font Mono, FiraCodeNerdFontCompleteM-Regular, monospace",
+    "fonted.font": "JetBrainsMono Nerd Font",
+    "editor.accessibilitySupport": "off",
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "editor.suggestOnTriggerCharacters": true,
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "source": "Git Bash",
+            "path": "C:\\ProgramFiles\\Git\\bin\\bash.exe"
+        }
+    },
+    "terminal.integrated.automationProfile.windows": "Git Bash",
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "projectManager.git.baseFolders": [
+        "~/Developer"
+    ],
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "[shellscript]": {
+        "editor.defaultFormatter": "foxundermoon.shell-format"
+    },
+    "workbench.editorAssociations": {
+        "*.o5m": "default",
+        "*.jpg": "imagePreview.previewEditor",
+        "*.svg": "default",
+        "*.ico": "gryc.viewer",
+        "*.png": "imagePreview.previewEditor"
+    },
+    "editor.largeFileOptimizations": false,
+    "sonarlint.ls.javaHome": "~/.sdkman/candidates/java/19-zulu/zulu-19.jdk/Contents/Home/",
+    "sonarlint.rules": {
+        "java:S1854": {
+            "level": "off"
+        },
+        "java:S106": {
+            "level": "off"
+        },
+        "typescript:S1848": {
+            "level": "off"
+        },
+        "cpp:S6004": {
+            "level": "off"
+        },
+        "cpp:S6009": {
+            "level": "off"
+        },
+        "typescript:S4123": {
+            "level": "off"
+        }
+    },
+    "markdown-pdf.breaks": true,
+    "editor.inlineSuggest.enabled": true,
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": true,
+        "scminput": false,
+        "yaml": true,
+        "elixir": true,
+        "c": true,
+        "cpp": true,
+        "typescript": true
+    },
+    "github.copilot.advanced": {
+        "debug.showScores": true,
+        "debug.showSuggestions": true
+    },
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "excalidraw.theme": "auto",
+    "debug.onTaskErrors": "debugAnyway",
+    "workbench.editor.pinnedTabSizing": "compact",
+    // python settings
+    "python.condaPath": "/Users/nicolascossio/micromamba/condabin/conda",
+    "python.venvFolders": [
+        "~/micromamba/venv",
+        "~/.virtualenvs/",
+    ],
+    "settingsSync.ignoredSettings": [
+        "-python.venvFolders",
+        "-java.configuration.runtimes",
+    ],
+    "python.linting.enabled": true,
+    "python.formatting.provider": "none",
+    "python.analysis.typeCheckingMode": "strict",
+    "python.analysis.autoSearchPaths": true,
+    "[python]": {
+        "editor.rulers": [
+            90
+        ],
+        "editor.defaultFormatter": "ms-python.autopep8",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        },
+        "editor.formatOnType": true
+    },
+    "[yaml]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "window.commandCenter": true,
+    // VIM SETTINGS
+    "vim.leader": " ",
+    "vim.useSystemClipboard": true,
+    "vim.hlsearch": true,
+    "vim.smartRelativeLine": true,
+    "vim.autoindent": true,
+    // Plugins
+    "vim.easymotion": true,
+    "vim.surround": true,
+    "vim.sneak": true,
+    // Shortcut
+    "vim.visualModeKeyBindings": [
+        {
+            "before": [
+                "J"
+            ],
+            "commands": [
+                "editor.action.moveLinesDownAction"
+            ]
+        },
+        {
+            "before": [
+                "K"
+            ],
+            "commands": [
+                "editor.action.moveLinesUpAction"
+            ]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<leader>",
+                "e"
+            ],
+            "commands": [
+                "workbench.action.toggleSidebarVisibility"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "r",
+                "r"
+            ],
+            "commands": [
+                "editor.action.rename"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "f"
+            ],
+            "commands": [
+                "editor.action.quickFix"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "k"
+            ],
+            "commands": [
+                "editor.action.showHover"
+            ]
+        }
+    ],
+    "vim.statusBarColorControl": false,
+    "vim.statusBarColors.insert": "#BF616A",
+    "vim.statusBarColors.visual": "#B48EAD",
+    "vim.statusBarColors.visualline": "#B48EAD",
+    "vim.statusBarColors.visualblock": "#A3BE8C",
+    "vim.statusBarColors.replace": "#D08770",
+    "vim.statusBarColors.commandlineinprogress": "#007ACC",
+    "vim.statusBarColors.searchinprogressmode": "#007ACC",
+    "vim.statusBarColors.easymotionmode": "#007ACC",
+    "vim.statusBarColors.easymotioninputmode": "#007ACC",
+    "vim.statusBarColors.surroundinputmode": "#007ACC",
+    // end VIM SETTINGS
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true,
+        "source.organizeImports": true
+    },
+    "workbench.editor.enablePreview": false,
+    "screencastMode.fontSize": 36,
+    "screencastMode.verticalOffset": 5,
+    "licenser.author": "\"Nicolas Cossio Miravalles\"",
+    "licenser.license": "MIT",
+    "licenser.customHeaderFile": "~/code/licenses/license_1.0",
+    "C_Cpp.autocompleteAddParentheses": true,
+    "C_Cpp.codeAnalysis.updateDelay": 1000,
+    "C_Cpp.default.cStandard": "c99",
+    "C_Cpp.doxygen.generatedStyle": "/**",
+    "C_Cpp.inlayHints.autoDeclarationTypes.enabled": true,
+    "C_Cpp.inlayHints.parameterNames.enabled": true,
+    "C_Cpp.inlayHints.autoDeclarationTypes.showOnLeft": true,
+    "C_Cpp.inlayHints.referenceOperator.enabled": true,
+    "C_Cpp.intelliSenseUpdateDelay": 1000,
+    "cmake.allowCommentsInPresetsFile": true,
+    "cmake.configureOnOpen": true,
+    "terminal.integrated.defaultProfile.osx": "fish",
+    "cmake.cmakePath": "/opt/homebrew/bin/cmake",
+    "cmake.ctestPath": "/opt/homebrew/bin/ctest",
+    "cmake.debugConfig": {
+        "MIMode": "lldb"
+    },
+    "customizeUI.font.regular": "Space Mono Nerd Font Complete Mono, Liga SFMono Nerd Font",
+    "cmake.configureSettings": {
+        "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
+    },
+    "terminal.integrated.gpuAcceleration": "on",
+    "editor.stickyScroll.enabled": true,
+    "rapidapi.terminalLink.enabled": true,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "C_Cpp.clang_format_path": "/opt/homebrew/bin/clang-format",
+    "licenser.disableAutoHeaderInsertion": true,
+    "boot-java.rewrite.reconcile": true,
+    "debug.terminal.clearBeforeReusing": true,
+    "tabnine.experimentalAutoImports": true,
+    "dev.containers.executeInWSL": true,
+    "totalTypeScript.hideAllTips": true,
+    "totalTypeScript.hideBasicTips": false,
+    "java.import.gradle.java.home": "/Users/pepperonico/.sdkman/candidates/java/11.0.16.1-zulu",
+    "autoimport.showNotifications": true,
+    "workbench.colorCustomizations": {
+        "[Pink Cat Boo]": {
+            "statusBar.foreground": "#000000",
+            "statusBar.debuggingBackground": "#ffd700",
+            "statusBar.debuggingForeground": "#000000",
+            "editor.selectionHighlightBackground": "#699c924e",
+            "editorInlayHint.foreground": "#000000",
+            "editorInlayHint.background": "#ffd602"
+        }
+    },
+    "react-native-tools.showUserTips": false,
+    "notebook.output.wordWrap": true,
+    "notebook.cellToolbarVisibility": "hover",
+    "notebook.output.scrolling": true,
+    "rsp-ui.enableStartServerOnActivation": [
+        {
+            "id": "redhat.vscode-community-server-connector",
+            "name": "Community Server Connector",
+            "startOnActivation": true
+        }
+    ],
+    "markdownlint.customRules": [
+        "{docsmsft.docs-linting}/markdownlint-custom-rules/rules.js"
+    ],
+    "markdownlint.config": {
+        "MD028": false,
+        "MD025": {
+            "front_matter_title": ""
+        }
+    },
+    "eslint.format.enable": true,
+    "errorLens.excludeBySource": [
+        "sonarlint(typescript:S4123)",
+        "ts(2349)",
+        "eslint(@typescript-eslint/no-var-requires)",
+        "ts(2304)"
+    ],
+    "typescript.tsserver.log": "verbose",
+    "editor.inlineSuggest.showToolbar": "always",
+    "[typescript]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "notebook.lineNumbers": "on",
+    "workbench.colorTheme": "Correia Gruvbox Theme",
+    "sqltools.useNodeRuntime": true,
+    "githubPullRequests.createOnPublishBranch": "never",
+    "[elixir]": {
+        "editor.defaultFormatter": "JakeBecker.elixir-ls"
+    },
+    "elixirLS.enableTestLenses": true,
+    "emmet.excludeLanguages": [],
+    "elixirLS.fetchDeps": true,
+    "workbench.iconTheme": "vscode-icons",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.codeLens": true,
+    "git.mergeEditor": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "cody.serverEndpoint": "https://sourcegraph.com/"
+}

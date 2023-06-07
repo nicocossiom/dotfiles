@@ -1,0 +1,61 @@
+# Launch : Help
+shift + alt - h : yabai -m rule --add app="^yabai-help-overlay" sticky=on layer=above manage=off && open /Applications/yabai-help-overlay.app
+
+# Focus : Shout
+alt - j : yabai -m window --focus south
+# Focus : North
+alt - k : yabai -m window --focus north
+# Focus : West
+alt - h : yabai -m window --focus west
+# Focus : East
+alt - l : yabai -m window --focus east
+
+# Display-focus : West
+alt - s : yabai -m display --focus west
+# Display-focus : East
+alt - g : yabai -m display --focus east
+
+# Layout : rotate layout clockwise
+shift + alt - r : yabai -m space --rotate 270
+# Layout : flip along y-axis
+shift + alt - y : yabai -m space --mirror y-axis
+# Layout : flip along x-axis
+shift + alt - x : yabai -m space --mirror x-axis
+# Layout : toggle window float
+shift + alt - t : yabai -m window --toggle float --grid 4:4:1:1:2:2
+
+# WindowSize : maximize a window
+shift + alt - m : yabai -m window --toggle zoom-fullscreen
+# WindowSize : balance out tree of windows (resize to occupy same area)
+shift + alt - e : yabai -m space --balance
+
+# Swap-window : swap window with window below
+shift + alt - j : yabai -m window --swap south
+# Swap-window : swap window with window above
+shift + alt - k : yabai -m window --swap north
+# Swap-window : swap window with window to the left
+shift + alt - h : yabai -m window --swap west
+# Swap-window : swap window with window to the right
+shift + alt - l : yabai -m window --swap east
+
+ctrl + alt - j : yabai -m window --warp south
+ctrl + alt - k : yabai -m window --warp north
+ctrl + alt - h : yabai -m window --warp west
+ctrl + alt - l : yabai -m window --warp east
+
+# WindowDisplay : move window to display to the left
+shift + alt - s : yabai -m window --display west
+# WindowDisplay : move window to display to the right
+shift + alt - g : yabai -m window --display east
+
+# WindowSpace : move window to space to the left
+shift + alt - p : yabai -m window --space prev
+# WindowSpace : move window to space to the right
+shift + alt - n : yabai -m window --space next
+
+# Yabai : stop yabai
+ctrl + alt - q : brew services stop yabai
+# Yabai : start yabai
+ctrl + alt - s : brew services start yabai
+# Yabai : restart yabai
+ctrl + alt - r : brew services restart yabai
