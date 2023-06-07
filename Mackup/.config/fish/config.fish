@@ -1,7 +1,11 @@
 alias ls=lsd
 alias cat=bat
+alias top=btm
+alias htop=btm
+alias find=fd
 alias p=pnpm
 alias px=pnpx
+alias fd=dust
 
 fish_ssh_agent
 
@@ -19,4 +23,7 @@ if test -f /Users/pepperonico/mambaforge/bin/conda
 end
 # <<< conda initialize <<<
 
+# ohmpyposh theme
 source ~/.config/fish/functions/oh-my-posh.fish
+# z jump
+zoxide init fish | source
