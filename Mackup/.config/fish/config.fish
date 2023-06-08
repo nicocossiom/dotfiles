@@ -27,3 +27,5 @@ end
 source ~/.config/fish/functions/oh-my-posh.fish
 # z jump
 zoxide init fish | source
+
+fish_logo

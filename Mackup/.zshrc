@@ -29,7 +29,7 @@ unset __conda_setup
 
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
 
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
