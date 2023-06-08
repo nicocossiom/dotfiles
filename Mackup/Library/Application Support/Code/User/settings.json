@@ -413,5 +413,6 @@
     },
     "[dockerfile]": {
         "editor.defaultFormatter": "ms-azuretools.vscode-docker"
-    }
+    },
+    "window.zoomLevel": 3
 }

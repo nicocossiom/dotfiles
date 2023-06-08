@@ -48,3 +48,4 @@ yabai -m rule --add app="^iStat Menus$" manage=off
 yabai -m rule --add app="^Jetbrains Toolbox$" manage=off
 yabai -m rule --add app="^iStatMenusAgent$" manage=off
 yabai -m rule --add app="^Raycast$" manage=off
+yabai -m rule --add app="^CleanShot X$" manage=off
