@@ -28,4 +28,7 @@ source ~/.config/fish/functions/oh-my-posh.fish
 # z jump
 zoxide init fish | source
 
-fish_logo
+# fish_logo
+
+# fzf keybingings
+fzf_configure_bindings --directory=\cf --git_status=\cS --git_log=\a --processes=\cO
