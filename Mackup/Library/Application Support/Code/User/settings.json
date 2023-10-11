@@ -95,7 +95,7 @@
     "terminal.integrated.defaultProfile.linux": "fish",
     "terminal.integrated.shellIntegration.enabled": true,
     "C_Cpp.codeAnalysis.clangTidy.enabled": true,
-    "terminal.integrated.fontSize": 12,
+    "terminal.integrated.fontSize": 14,
     "editor.fontWeight": "normal",
     "editor.fontFamily": "iMWritingMonoNerdFont-Italic, Iosevka-Extended-Italic, LigaSFMonoNerdFont-Medium, SpaceMonoNerdFontCompleteM-Regular, DankMono-Regular, DankMono-Italic, JetBrainsMono Nerd Font, Hack Nerd Font Mono, FiraCodeNerdFontCompleteM-Regular, monospace",
     "fonted.font": "JetBrainsMono Nerd Font",
@@ -136,7 +136,8 @@
         "*.jpg": "imagePreview.previewEditor",
         "*.svg": "default",
         "*.ico": "gryc.viewer",
-        "*.png": "imagePreview.previewEditor"
+        "*.png": "imagePreview.previewEditor",
+        "*.tmp": "hexEditor.hexedit"
     },
     "editor.largeFileOptimizations": false,
     "sonarlint.ls.javaHome": "~/.sdkman/candidates/java/19-zulu/zulu-19.jdk/Contents/Home/",
@@ -157,6 +158,9 @@
             "level": "off"
         },
         "typescript:S4123": {
+            "level": "off"
+        },
+        "typescript:S6544": {
             "level": "off"
         }
     },
@@ -390,8 +394,7 @@
         "editor.defaultFormatter": "dbaeumer.vscode-eslint"
     },
     "notebook.lineNumbers": "on",
-    "workbench.colorTheme": "Ayu Dark",
-    "sqltools.useNodeRuntime": true,
+    // "sqltools.useNodeRuntime": true,
     "githubPullRequests.createOnPublishBranch": "never",
     "[elixir]": {
         "editor.defaultFormatter": "JakeBecker.elixir-ls"
@@ -414,5 +417,21 @@
     "[dockerfile]": {
         "editor.defaultFormatter": "ms-azuretools.vscode-docker"
     },
-    "window.zoomLevel": 3
+    "csharp.inlayHints.parameters.enabled": true,
+    "csharp.inlayHints.types.forLambdaParameterTypes": true,
+    "csharp.inlayHints.parameters.forIndexerParameters": true,
+    "csharp.inlayHints.parameters.forLiteralParameters": true,
+    "csharp.inlayHints.parameters.forObjectCreationParameters": true,
+    "csharp.inlayHints.parameters.forOtherParameters": true,
+    "sqltools.useNodeRuntime": true,
+    "hexeditor.defaultEndianness": "big",
+    "cSpell.userWords": [
+        "compartición",
+        "ipfs"
+    ],
+    "editor.wordWrap": "on",
+    "cSpell.enabled": false,
+    "editor.fontSize": 13,
+    "workbench.colorTheme": "Pink Cat Boo",
+    "editor.inlineSuggest.suppressSuggestions": true,
 }

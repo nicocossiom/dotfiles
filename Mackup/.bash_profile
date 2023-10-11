@@ -25,3 +25,5 @@ fi
 
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/bash_profile.post.bash" ]] && builtin source "$HOME/.fig/shell/bash_profile.post.bash"
+
+[[ -s "/Users/pepperonico/.gvm/scripts/gvm" ]] && source "/Users/pepperonico/.gvm/scripts/gvm"

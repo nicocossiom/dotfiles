@@ -25,7 +25,6 @@ yabai -m config mouse_follows_focus on
 # autoraise windows on focus
 yabai -m config focus_follows_mouse autoraise
 
-
 # modifier for clicking and dragging with mouse
 yabai -m config mouse_modifier alt
 # set modifier + left-click drag to move window
@@ -36,7 +35,6 @@ yabai -m config mouse_action2 resize
 # when window is dropped in center of another window, swap them (on edges it will split it)
 yabai -m mouse_drop_action swap
 
-
 # disable specific apps
 yabai -m rule --add app="^System Settings$" manage=off
 yabai -m rule --add app="^Calculator$" manage=off
@@ -45,7 +43,9 @@ yabai -m rule --add app="^Finder$" manage=off
 yabai -m rule --add app="^Activity Monitor$" manage=off
 yabai -m rule --add app="^iStat Menus Status$" manage=off
 yabai -m rule --add app="^iStat Menus$" manage=off
-yabai -m rule --add app="^Jetbrains Toolbox$" manage=off
+yabai -m rule --add app="^JetBrains Toolbox$" manage=off
 yabai -m rule --add app="^iStatMenusAgent$" manage=off
 yabai -m rule --add app="^Raycast$" manage=off
 yabai -m rule --add app="^CleanShot X$" manage=off
+yabai -m rule --add app="^Fig$" manage=off
+yabai -m rule --add app="^Presentify$" manage=off
