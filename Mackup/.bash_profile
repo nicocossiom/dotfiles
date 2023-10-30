@@ -23,7 +23,7 @@ if [ -f "/Users/pepperonico/mambaforge/etc/profile.d/mamba.sh" ]; then
 fi
 # <<< conda initialize <<<
 
+[[ -s "/Users/pepperonico/.gvm/scripts/gvm" ]] && source "/Users/pepperonico/.gvm/scripts/gvm"
+
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/bash_profile.post.bash" ]] && builtin source "$HOME/.fig/shell/bash_profile.post.bash"
-
-[[ -s "/Users/pepperonico/.gvm/scripts/gvm" ]] && source "/Users/pepperonico/.gvm/scripts/gvm"

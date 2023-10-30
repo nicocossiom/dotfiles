@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<MavenRepositoryInfos>
+  <Repositories>
+    <Repository>
+      <Id>central</Id>
+      <Type>default</Type>
+      <URL>https://repo.maven.apache.org/maven2/</URL>
+      <Scope/>
+      <UserName/>
+      <Password/>
+    </Repository>
+    <Repository>
+      <Id>dremio-free</Id>
+      <Type>default</Type>
+      <URL>https://maven.dremio.com/free/</URL>
+      <Scope>com.dremio</Scope>
+      <UserName/>
+      <Password/>
+    </Repository>
+  </Repositories>
+</MavenRepositoryInfos>

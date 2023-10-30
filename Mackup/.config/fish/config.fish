@@ -5,6 +5,8 @@ alias htop=btm
 alias find=fd
 alias p=pnpm
 alias px=pnpx
+alias b=bun
+alias bx=bunx
 alias fd=dust
 
 fish_ssh_agent

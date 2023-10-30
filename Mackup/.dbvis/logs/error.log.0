@@ -1,0 +1,92 @@
+2023-10-24 11:11:27.799 INFO   686 [AWT-EventQueue-0 - e.initialize] DbVisualizer: STARTING
+2023-10-24 11:11:27.808 CONFIG 686 [AWT-EventQueue-0 - e.b] Product: DbVisualizer 23.2.5 (build: 3941)
+2023-10-24 11:11:27.808 CONFIG 686 [AWT-EventQueue-0 - e.b] OS: Mac OS X
+2023-10-24 11:11:27.808 CONFIG 686 [AWT-EventQueue-0 - e.b] OS Version: 14.1
+2023-10-24 11:11:27.808 CONFIG 686 [AWT-EventQueue-0 - e.b] OS Arch: aarch64
+2023-10-24 11:11:27.809 CONFIG 686 [AWT-EventQueue-0 - e.b] Java Version: 17.0.7
+2023-10-24 11:11:27.809 CONFIG 686 [AWT-EventQueue-0 - e.b] Java VM: OpenJDK 64-Bit Server VM
+2023-10-24 11:11:27.809 CONFIG 686 [AWT-EventQueue-0 - e.b] Java Vendor: Eclipse Adoptium
+2023-10-24 11:11:27.809 CONFIG 686 [AWT-EventQueue-0 - e.b] Java Home: /Applications/DbVisualizer.app/Contents/Resources/jre.bundle/Contents/Home
+2023-10-24 11:11:27.809 CONFIG 686 [AWT-EventQueue-0 - e.b] DbVis Home: /Applications/DbVisualizer.app/Contents/Resources/app
+2023-10-24 11:11:27.809 CONFIG 686 [AWT-EventQueue-0 - e.b] User Home: /Users/pepperonico
+2023-10-24 11:11:27.809 CONFIG 686 [AWT-EventQueue-0 - e.b] PrefsDir: /Users/pepperonico/.dbvis
+2023-10-24 11:11:27.809 CONFIG 686 [AWT-EventQueue-0 - e.b] SessionId: 686
+2023-10-24 11:11:27.811 CONFIG 686 [AWT-EventQueue-0 - e.b] Java Arguments: <none>
+2023-10-24 11:11:27.811 CONFIG 686 [AWT-EventQueue-0 - e.b] Java Properties: 
+--add-exports=java.base/sun.security.action=ALL-UNNAMED
+--add-exports=java.desktop/sun.awt.image=ALL-UNNAMED
+--add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED
+--add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED
+--add-exports=java.desktop/sun.swing.table=ALL-UNNAMED
+--add-exports=java.desktop/sun.swing=ALL-UNNAMED
+--add-exports=java.xml/com.sun.org.apache.xerces.internal.parsers=ALL-UNNAMED
+--add-opens=java.base/java.nio=ALL-UNNAMED
+--add-opens=java.base/java.util=ALL-UNNAMED
+--add-opens=java.desktop/java.awt.event=ALL-UNNAMED
+--add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED
+--add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED
+--add-opens=java.desktop/javax.swing.text.html=ALL-UNNAMED
+--add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED
+--add-opens=java.desktop/javax.swing=ALL-UNNAMED
+--add-opens=java.desktop/sun.awt.image=ALL-UNNAMED
+--add-opens=java.desktop/sun.awt=ALL-UNNAMED
+--add-opens=java.xml/com.sun.org.apache.xerces.internal.util=ALL-UNNAMED
+-Dapple.awt.application.appearance=system
+-Ddbvis.home=/Applications/DbVisualizer.app/Contents/Resources/app
+-Dexe4j.moduleName=/Applications/DbVisualizer.app
+-Dfile.encoding=UTF-8
+-Di4j.jreBundle=/Applications/DbVisualizer.app/Contents/Resources/jre.bundle
+-Di4j.ownBundlePath=/Applications/DbVisualizer.app
+-Dinstall4j.launcherId=3074
+-Dinstall4j.swt=false
+-Dsun.locale.formatasdefault=true
+-XX:StringTableSize=1000003
+-Xmx2048m
+2023-10-24 11:11:27.855 INFO   686 [AWT-EventQueue-0 - c.b] Directory created: /Users/pepperonico/.dbvis/Bookmarks
+2023-10-24 11:11:27.855 INFO   686 [AWT-EventQueue-0 - c.b] Directory created: /Users/pepperonico/.dbvis/config232
+2023-10-24 11:11:27.856 INFO   686 [AWT-EventQueue-0 - c.b] Directory created: /Users/pepperonico/.dbvis/config232/borders
+2023-10-24 11:11:27.856 INFO   686 [AWT-EventQueue-0 - c.b] Directory created: /Users/pepperonico/.dbvis/config232/keymaps
+2023-10-24 11:11:27.856 INFO   686 [AWT-EventQueue-0 - c.b] Directory created: /Users/pepperonico/.dbvis/config232/layouts
+2023-10-24 11:11:27.856 INFO   686 [AWT-EventQueue-0 - c.b] Directory created: /Users/pepperonico/.dbvis/config232/sqlformats
+2023-10-24 11:11:27.856 INFO   686 [AWT-EventQueue-0 - c.b] Directory created: /Users/pepperonico/.dbvis/config232/databaseinfo
+2023-10-24 11:11:27.856 INFO   686 [AWT-EventQueue-0 - c.b] Directory created: /Users/pepperonico/.dbvis/config232/databaseinfo/user
+2023-10-24 11:11:27.857 INFO   686 [AWT-EventQueue-0 - c.b] Directory created: /Users/pepperonico/.dbvis/config232/databaseinfo/user/databaseTypes
+2023-10-24 11:11:27.857 INFO   686 [AWT-EventQueue-0 - c.b] Directory created: /Users/pepperonico/.dbvis/config232/databaseinfo/user/driverTypes
+2023-10-24 11:11:27.857 INFO   686 [AWT-EventQueue-0 - c.b] Directory created: /Users/pepperonico/.dbvis/ext
+2023-10-24 11:11:27.857 INFO   686 [AWT-EventQueue-0 - c.b] Directory created: /Users/pepperonico/.dbvis/ext/images
+2023-10-24 11:11:27.857 INFO   686 [AWT-EventQueue-0 - c.b] Directory created: /Users/pepperonico/.dbvis/ext/images/16x16
+2023-10-24 11:11:27.857 INFO   686 [AWT-EventQueue-0 - c.b] Directory created: /Users/pepperonico/.dbvis/ext/images/24x24
+2023-10-24 11:11:27.858 INFO   686 [AWT-EventQueue-0 - c.b] Directory created: /Users/pepperonico/.dbvis/ext/profiles
+2023-10-24 11:11:27.858 INFO   686 [AWT-EventQueue-0 - c.b] Directory created: /Users/pepperonico/.dbvis/ext/keywords
+2023-10-24 11:11:27.858 INFO   686 [AWT-EventQueue-0 - c.b] Directory created: /Users/pepperonico/.dbvis/History
+2023-10-24 11:11:27.858 INFO   686 [AWT-EventQueue-0 - c.b] Directory created: /Users/pepperonico/.dbvis/import
+2023-10-24 11:11:27.858 INFO   686 [AWT-EventQueue-0 - c.b] Directory created: /Users/pepperonico/.dbvis/jdbc
+2023-10-24 11:11:27.858 INFO   686 [AWT-EventQueue-0 - c.b] Directory created: /Users/pepperonico/.dbvis/libraryCache
+2023-10-24 11:11:27.858 INFO   686 [AWT-EventQueue-0 - c.b] Directory created: /Users/pepperonico/.dbvis/Monitors
+2023-10-24 11:11:27.858 INFO   686 [AWT-EventQueue-0 - c.b] Directory created: /Users/pepperonico/.dbvis/Workspace
+2023-10-24 11:11:27.859 INFO   686 [AWT-EventQueue-0 - c.b] Directory created: /Users/pepperonico/.dbvis/Workspace/default
+2023-10-24 11:11:27.859 INFO   686 [AWT-EventQueue-0 - c.b] Directory created: /Users/pepperonico/.dbvis/sqllogs
+2023-10-24 11:11:27.859 INFO   686 [AWT-EventQueue-0 - c.b] Directory created: /Users/pepperonico/.dbvis/drivers
+2023-10-24 11:11:27.859 INFO   686 [AWT-EventQueue-0 - c.b] Directory created: /Users/pepperonico/.dbvis/drivers/maven
+2023-10-24 11:11:27.859 INFO   686 [AWT-EventQueue-0 - c.b] Directory created: /Users/pepperonico/.dbvis/drivers/remote
+2023-10-24 11:11:27.859 INFO   686 [AWT-EventQueue-0 - c.b] Directory created: /Users/pepperonico/.dbvis/drivers/local
+2023-10-24 11:11:28.464 INFO   686 [AWT-EventQueue-0 - y.j] Cleaning any old driver files
+2023-10-24 11:11:28.465 INFO   686 [AWT-EventQueue-0 - y.j] Finished cleaning old driver dirs. Time: 0ms
+2023-10-24 11:11:28.476 INFO   686 [AWT-EventQueue-0 - OraTNSUtil.getTNSDirectory] The TNS_ADMIN environment variable is not set. Trying ORACLE_HOME
+2023-10-24 11:11:28.476 INFO   686 [AWT-EventQueue-0 - OraTNSUtil.getTNSDirectory] The ORACLE_HOME environment variable is not set. TNS names cannot be used for Oracle connections
+2023-10-24 11:11:28.620 INFO   686 [AWT-EventQueue-0 - nb.h] Existing beans: 'G1 Old Gen' max: 2147483648
+2023-10-24 11:11:28.623 INFO   686 [AWT-EventQueue-0 - nb.h] Memory monitor initialized for MxBean: 'G1 Old Gen' Notification threshold: 41943040 Low memory threshold: 25165824 release buffer: 1048576 Usage threshold: 2105540608
+2023-10-24 11:11:40.619 INFO   686 [AWT-EventQueue-0 - d.f] Proceeding from EntryDialog with Free license
+2023-10-24 11:11:42.912 INFO   686 [ExecutorRunner-pool-1-thread-1 - d.b] /Users/pepperonico/.dbvis/config232 was created during session. Checking if migration is needed
+2023-10-24 11:11:42.913 INFO   686 [ExecutorRunner-pool-1-thread-1 - d.b] Migration not needed since there is no previous configuration in: [/Users/pepperonico/.dbvis/config231, /Users/pepperonico/.dbvis/config140, /Users/pepperonico/.dbvis/config130, /Users/pepperonico/.dbvis/config70, /Users/pepperonico/.dbvis/config]
+2023-10-24 11:11:43.477 INFO   686 [AWT-EventQueue-0 - DbVisualizerGUI.initialize] Startup time: 16.959
+2023-10-24 11:11:43.535 INFO   686 [AWT-EventQueue-0 - c.i] Load workspace time: 0.021
+2023-10-24 11:11:43.536 INFO   686 [AWT-EventQueue-0 - sb.f] Workspace auto saver thread started. Interval: 30 sec
+2023-10-24 11:11:43.537 INFO   686 [AWT-EventQueue-0 - lb.c] Connection keep-alive thread started. Interval: 10 sec
+2023-10-24 11:11:43.538 INFO   686 [AWT-EventQueue-0 - y.f] Workspace file modification monitor thread started. Interval: 30 sec
+2023-10-24 11:12:21.788 INFO   686 [AWT-EventQueue-0 - b.g] Wrote user properties files. Time: 0.124. Success files: 10. Failed: 0
+2023-10-24 11:12:57.248 INFO   686 [AWT-EventQueue-0 - b.g] Wrote user properties files. Time: 0.098. Success files: 10. Failed: 0
+2023-10-24 11:14:02.288 INFO   686 [AWT-EventQueue-0 - b.g] Wrote user properties files. Time: 0.142. Success files: 10. Failed: 0
+2023-10-24 11:14:02.289 INFO   686 [AWT-EventQueue-0 - DbVisualizerGUI.b] Shutdown time: 0.267
+2023-10-24 11:14:02.289 INFO   686 [AWT-EventQueue-0 - DbVisualizerGUI.b] DbVisualizer: STOPPED. ExitType: NORMAL
+
